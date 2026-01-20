@@ -11,3 +11,5 @@ npm run dev
 하면
 
 http://localhost:5173/
+
+### git convention
