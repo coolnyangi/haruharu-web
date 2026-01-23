@@ -22,6 +22,9 @@ export default function Home() {
               data={item}
             />
           ))}
+          <button className='habit-button'>
+            <img className="button-icon" src="./src/assets/HabitCard/plus.png" />
+          </button>
         </>
       );
 }

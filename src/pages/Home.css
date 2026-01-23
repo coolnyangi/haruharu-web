@@ -6,3 +6,25 @@
 .card.open {
     height: 420px;
 }
+
+.habit-button {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    padding: 0;
+
+    width: 56px;
+    height: 56px;
+    border: none;
+    background: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

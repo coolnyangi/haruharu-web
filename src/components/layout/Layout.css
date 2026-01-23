@@ -5,7 +5,7 @@
 }
 
 .content {
-    padding-top: 48px; /* Height of the header */
+    padding-top: 70px; /* Height of the header */
     padding-bottom: 57px; /* Height of the bottom nav */
 
     flex: 1;
