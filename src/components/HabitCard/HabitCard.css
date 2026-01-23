@@ -1,0 +1,85 @@
+.habit-card {
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    overflow: hidden;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+
+    position: relative;
+    padding: 16px;
+    margin-bottom: -28px;
+  }
+  
+  .habit-card.open {
+    max-height: 500px;
+  }
+  
+  .habit-card.closed {
+    max-height: 200px;
+  }
+
+  .card-0 {
+    background-color: #FCF9EA;
+  }
+
+  .card-1 {
+    background-color: #CBF3BB;
+  }
+
+  .card-2 {
+    background-color: #BBDCE5;
+  }
+
+/* HabitCardCollapsed.jsx */
+.habit-card-collapsed {
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
+    align-items: center;
+  }
+  
+  .habit-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  
+  /* HabitCardExpanded.jsx */
+  .habit-card-expanded {
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .habit-header-expanded {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+
+  .habit-title-expanded {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .habit-progress {
+    display: flex;
+    font-size: 1.5rem;
+  }
+
+  .character {
+    display: flex;
+    width: 214px;
+    margin-top: 40px;
+  }
+
+  .habit-summary {
+    font-size: 1rem;
+    color: #666;
+  }
