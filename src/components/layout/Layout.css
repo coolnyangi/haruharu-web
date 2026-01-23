@@ -1,0 +1,13 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    padding-top: 48px; /* Height of the header */
+    padding-bottom: 57px; /* Height of the bottom nav */
+
+    flex: 1;
+    overflow-y: auto;
+}
