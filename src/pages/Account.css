@@ -1,0 +1,118 @@
+.account {
+  min-height: 100vh;
+  width: 100%;          
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; 
+}
+
+.account__header {
+  width: 100%;          
+  height: 56px;
+  padding: 0 12px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.account__back {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.account__title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.account__spacer {
+  width: 40px;
+  height: 40px;
+}
+
+.account__content {
+  width: 100%;
+  padding: 10px 16px 90px;
+  box-sizing: border-box;
+}
+
+.block {
+  margin-top: 16px;
+}
+
+.block__label {
+  font-size: 12px;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.readonly {
+  height: 44px;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+}
+
+.readonly__text {
+  color: #9b9b9b;
+  font-size: 13px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input {
+  height: 44px;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  padding: 0 12px;
+  font-size: 13px;
+  outline: none;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.input--full {
+  width: 100%;
+}
+
+.space {
+  height: 10px;
+}
+
+.btn {
+  height: 44px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 10px;
+  background: #efefef;
+  color: #555;
+  cursor: pointer;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.btn--full {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.msg {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #d14b4b;
+}
