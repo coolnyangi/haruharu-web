@@ -1,12 +1,9 @@
 .habit-card {
     transition: max-height 0.3s ease, padding 0.3s ease;
     overflow: hidden;
-    border-top-left-radius: 36px;
-    border-top-right-radius: 36px;
+    border-radius: 36px;
 
     position: relative;
-    padding: 16px;
-    margin-bottom: -28px;
   }
   
   .habit-card.open {
@@ -32,23 +29,36 @@
 /* HabitCardCollapsed.jsx */
 .habit-card-collapsed {
     display: flex;
-    flex-direction: column;
-
-    padding: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
     align-items: center;
   }
-  
+
+  .habit-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .habit-flower {
+    font-size: 0.9rem;
+    font-weight: medium;
+  }
+
   .habit-title {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 8px;
-    text-align: center;
   }
   
+  .habit-percent {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
   /* HabitCardExpanded.jsx */
   .habit-card-expanded {
     padding: 24px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +68,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    align-items: center;
     width: 100%;
   }
 

@@ -5,9 +5,12 @@
 }
 
 .content {
-    padding-top: 70px; /* Height of the header */
+    padding-top: 48px; /* Height of the header */
     padding-bottom: 57px; /* Height of the bottom nav */
 
+    padding-left: 8px;
+    padding-right: 8px;
+    
     flex: 1;
     overflow-y: auto;
 }
