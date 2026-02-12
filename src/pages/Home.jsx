@@ -9,7 +9,7 @@ export default function Home() {
     const data = [
         { id: 0, title: "매일 영어공부 10분" },
         { id: 1, title: "매일 수학공부 10분" },
-        // { id: 2, title: "매일 국어공부 10분" },
+        { id: 2, title: "매일 국어공부 10분" },
     ];
     return (
         <>

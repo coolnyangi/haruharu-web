@@ -19,11 +19,11 @@
   }
 
   .card-1 {
-    background-color: #CBF3BB;
+    background-color: #F0FFDF;
   }
 
   .card-2 {
-    background-color: #BBDCE5;
+    background-color: #D5E7FF;
   }
 
 /* HabitCardCollapsed.jsx */
@@ -66,21 +66,79 @@
 
   .habit-header-expanded {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .habit-header-title {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
 
-  .habit-title-expanded {
+  .habit-header-progress {
     display: flex;
-    font-size: 1.2rem;
-    font-weight: bold;
+    flex-direction: column;
+    gap: 8px;
   }
 
-  .habit-progress {
+  .habit-progress-bar {
+    position: relative;
+    height: 8px;
+
+    border-radius: 100px;
+    background-color: #FFF;
+
+    overflow: hidden;
+  }
+
+  .habit-progress-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: width 0.3s ease;
+  }
+
+  .fill-0 {
+    background: linear-gradient(
+      to right,
+      #FFF5C1 0%,
+      #FFE66A 100%
+    );
+  }
+
+  .fill-1 {
+    background: linear-gradient(
+      to right,
+      #EEFAB4 0%,
+      #D7F158 100%
+    );
+  }
+
+  .fill-2 {
+    background: linear-gradient(
+      to right,
+      #D5E7FF 0%,
+      #B4D4FF 100%
+    );
+  }
+  
+  .habit-sub-info {
     display: flex;
-    font-size: 1.5rem;
+    justify-content: space-between;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+  }
+
+  .delete {
+    color: #878787;
   }
 
   .character {
