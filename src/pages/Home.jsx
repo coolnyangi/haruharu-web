@@ -9,7 +9,7 @@ export default function Home() {
     const data = [
         { id: 0, title: "매일 영어공부 10분" },
         { id: 1, title: "매일 수학공부 10분" },
-        { id: 2, title: "매일 국어공부 10분" },
+        // { id: 2, title: "매일 국어공부 10분" },
     ];
     return (
         <>
@@ -19,9 +19,14 @@ export default function Home() {
           </div>
           <div className='habit-card-container'>
             {data.length === 0 ? (
-              <div className='no-habit-message'>
-                아직 추가된 습관이 없어요!<br />
-                아래 플러스 버튼을 눌러 습관을 추가해보세요!
+              <div className="no-habit-card">
+                  <div className="no-habit-header">
+                      <div className="no-habit-title">목표를 자연스럽게 습관으로~</div>
+                      <div className="no-habit-subtitle">새로운 목표를 만들어봐요</div>
+                  </div>
+                  <div className="flower-icon-container">
+                    <img className='flower-icon' src="./src/assets/Home/flower.png"/>
+                  </div>
               </div>
             ) : (
               data.map((item, index) => (
@@ -35,10 +40,14 @@ export default function Home() {
                 />
               ))
             )}
+            {data.length < 3 ? (
+              <div className='add-habit-card'>
+                <img className="button-icon" src="./src/assets/Home/plus.png" />
+              </div>
+            ):(
+              <></>
+            )}
           </div>
-          <button className='habit-button'>
-            <img className="button-icon" src="./src/assets/HabitCard/plus.png" />
-          </button>
         </>
       );
 }
