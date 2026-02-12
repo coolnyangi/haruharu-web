@@ -147,7 +147,35 @@
     margin-top: 40px;
   }
 
-  .habit-summary {
-    font-size: 1rem;
-    color: #666;
+  .habit-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    margin-top: 20px;
+  }
+
+  .habit-item {
+    width: 40px;
+    height: 40px;
+
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: opacity 0.2s ease, transform 0.15s ease;
+
+    z-index: 100;
+  }
+  
+  .habit-item img {
+    width: 100%;   /* 아이콘 크기 조절 */
+    height: 100%;
+    object-fit: contain;
   }
