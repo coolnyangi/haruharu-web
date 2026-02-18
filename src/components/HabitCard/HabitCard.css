@@ -1,12 +1,9 @@
 .habit-card {
     transition: max-height 0.3s ease, padding 0.3s ease;
     overflow: hidden;
-    border-top-left-radius: 36px;
-    border-top-right-radius: 36px;
+    border-radius: 36px;
 
     position: relative;
-    padding: 16px;
-    margin-bottom: -28px;
   }
   
   .habit-card.open {
@@ -22,33 +19,46 @@
   }
 
   .card-1 {
-    background-color: #CBF3BB;
+    background-color: #F0FFDF;
   }
 
   .card-2 {
-    background-color: #BBDCE5;
+    background-color: #D5E7FF;
   }
 
 /* HabitCardCollapsed.jsx */
 .habit-card-collapsed {
     display: flex;
-    flex-direction: column;
-
-    padding: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
     align-items: center;
   }
-  
+
+  .habit-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .habit-flower {
+    font-size: 0.9rem;
+    font-weight: medium;
+  }
+
   .habit-title {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 8px;
-    text-align: center;
   }
   
+  .habit-percent {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
   /* HabitCardExpanded.jsx */
   .habit-card-expanded {
     padding: 24px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,21 +66,79 @@
 
   .habit-header-expanded {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
   }
 
-  .habit-title-expanded {
+  .habit-header-title {
     display: flex;
-    font-size: 1.2rem;
-    font-weight: bold;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
-  .habit-progress {
+  .habit-header-progress {
     display: flex;
-    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .habit-progress-bar {
+    position: relative;
+    height: 8px;
+
+    border-radius: 100px;
+    background-color: #FFF;
+
+    overflow: hidden;
+  }
+
+  .habit-progress-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: width 0.3s ease;
+  }
+
+  .fill-0 {
+    background: linear-gradient(
+      to right,
+      #FFF5C1 0%,
+      #FFE66A 100%
+    );
+  }
+
+  .fill-1 {
+    background: linear-gradient(
+      to right,
+      #EEFAB4 0%,
+      #D7F158 100%
+    );
+  }
+
+  .fill-2 {
+    background: linear-gradient(
+      to right,
+      #D5E7FF 0%,
+      #B4D4FF 100%
+    );
+  }
+  
+  .habit-sub-info {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+  }
+
+  .delete {
+    color: #878787;
   }
 
   .character {
@@ -79,7 +147,35 @@
     margin-top: 40px;
   }
 
-  .habit-summary {
-    font-size: 1rem;
-    color: #666;
+  .habit-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    margin-top: 20px;
+  }
+
+  .habit-item {
+    width: 40px;
+    height: 40px;
+
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: opacity 0.2s ease, transform 0.15s ease;
+
+    z-index: 100;
+  }
+  
+  .habit-item img {
+    width: 100%;   /* 아이콘 크기 조절 */
+    height: 100%;
+    object-fit: contain;
   }
